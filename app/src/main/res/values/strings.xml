@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">cellcelly</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="password">Password</string>
+    <string name="todo">TODO</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="title_activity_change_password_screen">ChangePasswordScreen</string>
+    <string name="sent_mail">Sent Mail</string>
+    <string name="security_key">Security Key</string>
+    <string name="e_mail">E-mail</string>
+
+    <string-array name="tarifeler">
+        <item>Choose one</item>
+        <item>Diyarbakır 80tl 7000dk 7gb 7000sms 30 day</item>
+        <item>Rize 95tl 10000dk 10gb 10000sms 30day</item>
+        <item>Çanakkale 120tl 1700dk 17gb 700sms 17day </item>
+        <item>Eskişehir 140tl 1000dk 20gb 5000sms 30day</item>
+        <item>Ankara 50tl 3000dk 3gb 3000sms 30day </item>
+        <item>Bursa 65tl 5000dk 5gb 5000sms 30day</item>
+    </string-array>
+</resources>

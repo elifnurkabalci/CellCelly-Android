@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView1"
+        android:layout_width="336dp"
+        android:layout_height="123dp"
+        android:layout_marginTop="-16dp"
+        android:alpha="0.6"
+        app:cardCornerRadius="75dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonChange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="@+id/voiceRemaining"
+            app:layout_constraintEnd_toStartOf="@+id/text1"
+            app:layout_constraintStart_toStartOf="@+id/text1"
+            app:layout_constraintTop_toBottomOf="@+id/voiceRemaining">
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="137dp"
+                android:layout_height="37dp"
+                android:layout_marginEnd="32dp"
+                android:text="     Voice"
+                android:textSize="24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.813" />
+
+            <TextView
+                android:id="@+id/voiceRemaining"
+                android:layout_width="134dp"
+                android:layout_height="47dp"
+                android:layout_marginEnd="32dp"
+                android:text="@+id/voiceRemaining"
+                android:textSize="24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.213" />
+
+            <org.eazegraph.lib.charts.PieChart
+                android:id="@+id/piechartvoice"
+                android:layout_width="135dp"
+                android:layout_height="119dp"
+                android:layout_weight="1"
+                android:padding="6dp"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="345dp"
+        android:layout_height="133dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="8dp"
+        android:alpha="0.6"
+        app:cardCornerRadius="75dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewUsageInfo1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="349dp"
+            android:layout_height="129dp">
+
+
+            <org.eazegraph.lib.charts.PieChart
+                android:id="@+id/piechartdata"
+                android:layout_width="135dp"
+                android:layout_height="119dp"
+                android:layout_weight="1"
+                android:padding="6dp"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/dataRemaining"
+                android:layout_width="113dp"
+                android:layout_height="44dp"
+                android:layout_marginEnd="48dp"
+                android:text="@+id/dataRemaining"
+                android:textSize="24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.188" />
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="137dp"
+                android:layout_height="52dp"
+                android:layout_marginEnd="36dp"
+                android:text="     Data"
+                android:textSize="24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.792" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="347dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="35dp"
+        android:alpha="0.6"
+        app:cardCornerRadius="75dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="349dp"
+            android:layout_height="132dp">
+
+            <org.eazegraph.lib.charts.PieChart
+                android:id="@+id/piechartsms"
+                android:layout_width="135dp"
+                android:layout_height="119dp"
+                android:layout_weight="1"
+                android:padding="6dp"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/smsRemaining"
+                android:layout_width="130dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="36dp"
+                android:text="@+id/smsRemaining"
+                android:textSize="24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.19" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="140dp"
+                android:layout_height="33dp"
+                android:layout_marginEnd="28dp"
+                android:text="     SMS"
+                android:textSize="24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.838" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/buttonQuit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#0c4880"
+        android:text="EXIT"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonChange"
+        app:layout_constraintTop_toTopOf="@+id/buttonChange" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewUsageInfo1"
+        android:layout_width="360dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="16dp"
+        android:alpha="0.7"
+        android:backgroundTint="#0c4880"
+        app:cardCornerRadius="75dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="88dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textViewPhoneNumber"
+                android:layout_width="202dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="127dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:alpha="1"
+                android:text="MSISDN"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewDuraiton"
+                android:layout_width="162dp"
+                android:layout_height="23dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="22dp"
+                android:layout_marginBottom="8dp"
+                android:alpha="1"
+                android:gravity="center"
+                android:text="@+id/textViewDuraiton"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textViewPackageName"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewPackageName"
+                android:layout_width="136dp"
+                android:layout_height="26dp"
+                android:layout_marginEnd="24dp"
+                android:alpha="1"
+                android:gravity="center"
+                android:text="@+id/textViewPackageName"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewDuraiton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textViewDuraiton" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/buttonChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#0c4880"
+        android:text="Change Password"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonQuit"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
